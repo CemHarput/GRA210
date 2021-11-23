@@ -1,0 +1,84 @@
+.modalDialog	{ /* this is the parent div */
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.7);
+	overflow: auto; /* if we have excess content, this enables scrolling */
+	opacity: 0;
+	pointer-events: none; /* when the modal is invisible, mouse functionalities are disabled. */
+	transition: all 0.3s ease;
+	z-index: 9999;
+}
+.modalDialog:target	{
+	opacity: 1; /* this makes the modal visible, on-click */
+	pointer-events: auto; /* gives back the mouse functionalities */
+}
+.modalDialog > div	{ /* this is a child selector, it only selects the direct child elements */
+	background-color: #fff;
+	width: 54%;
+	padding: 2% 4%;
+	margin: 10% auto;
+	border-radius: 4px;
+	position: relative; /* the positioning of this div itself is NOT relative. But the positioning of its' contents ARE relative to THIS div */
+}
+textarea	{
+	display: block; /* by default they are inline */
+	width: 100%;
+	height: 35px;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 300;
+	background-color: rgba(0,0,0,0.05);
+	margin: 15px auto;
+	outline: none;
+	border: none;
+	resize: none;
+	border-radius: 4px;
+}
+.closebutton	{
+	background-color: lightslategray;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	text-decoration: none;
+	line-height: 40px;
+	width: 40px;
+	position: absolute;
+	top: -18px;
+	right: -18px;
+	text-align: center;
+	border-radius: 20px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+	transition: all 0.3s ease;
+}
+.closebutton:hover	{
+	background-color: #fddb3a;
+	box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+.modalDialog h1	{
+	text-align: left;
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 300;
+	color: rgba(122,131,153,1);
+	padding: 16px 0;
+}
+.modalDialog .mybutton	{
+	background-color: lightslategray;
+	color: #fff;
+	margin:0;
+	font-size: 15px;
+	padding: 2%;
+	font-weight: bold;
+}
+.salmontext	{
+	color: lightslategray;
+	margin: 0;
+    
+}
+.modalDialog p {
+    margin-top: 3%;
+    color: lightslategray;
+}
