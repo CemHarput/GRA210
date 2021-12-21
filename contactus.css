@@ -41,7 +41,8 @@ button{
     background:0;
     color:#5a5a6e;
     cursor:pointer;
-    transition:all .3s}
+    transition:all .3s
+}
 button:hover{
     background:#78788c;
     color:#fff}
@@ -58,4 +59,23 @@ span{
       }
     
     
+}
+@media screen and (max-width:810px) {
+    .form{
+         margin: auto;
+         width: 90%;
+         height: 360px;
+     }
+     button{
+        float:right;
+        padding:8px 12px;
+        margin:15px 0 0;
+        font-family:'Montserrat',sans-serif;
+        border:2px solid #78788c;
+        border-radius: 4px;
+        background:0;
+        color:#5a5a6e;
+        cursor:pointer;
+        transition:all .3s
     }
+}

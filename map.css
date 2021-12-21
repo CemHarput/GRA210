@@ -15,10 +15,18 @@
 .googlemap{
    display: block;
    position: inherit;
-   margin: 3%;
-   width: 95%;
+   margin: 5.3%;
+   width: 90%;
 }
 
 
 }
 
+@media screen and (max-width:810px) {
+    .googlemap{
+        display: block;
+        position: inherit;
+        margin: 5.3%;
+        width: 90%;
+     }
+}

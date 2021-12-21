@@ -176,3 +176,29 @@
 		margin-left: 10%;
 	}
 }
+@media screen and (max-width:810px) {
+	.ticket-container {
+		background: #fff;
+		width: 270px;
+		height: 520px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-radius: 5px;
+		position: absolute;
+		top: 50px;
+		box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+		opacity: 1;
+	}
+	.main-container .ticket-container {
+		opacity: 1;
+		
+	}
+	.main-container {
+		width: 270px;
+		height: 540px;
+		position: relative;
+		margin: 40px;
+		margin-left: 10%;
+	}
+}
