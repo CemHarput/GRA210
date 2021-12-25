@@ -1,5 +1,5 @@
 
-.form{width:500px;
+.form{width:430px;
     height:400px;
     background:#e6e6e6;
     border-radius:8px;box-shadow:0 0 40px -10px #000;
@@ -78,4 +78,20 @@ span{
         cursor:pointer;
         transition:all .3s
     }
+}
+@media screen and (max-width:963px) {
+    .form{
+
+         width: 350px;
+         margin-left: 54%;
+     }
+
+}
+@media screen and (max-width:810px) {
+    .form{
+
+        width: 730px;
+        margin-left: 4%;
+     }
+
 }
